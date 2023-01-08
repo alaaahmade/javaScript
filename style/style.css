@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: url("https://img.freepik.com/free-vector/abstract-classic-blue-screensaver_23-2148421853.jpg?w=740&t=st=1673161909~exp=1673162509~hmac=29d63431d7db6ab9aa24a713d3709fe2efce78e52321b726efb3b61c40c7cbeb");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choises {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+}
+
+.choises h2 {
+    color: rgb(0, 242, 255);
+    font-size: 3rem;
+    text-shadow: 0 0 35px rgb(0, 242, 255);
+
+}
+
+.choises img {
+    width: 120px;
+    height: 100px;
+}
+
+#result {
+    color: #f3f321;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #f3f321, 0 0 40px #f3f321, 0 0 80px #f3f321;
+}
+
+.btn button,
+.ok button,
+.no button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(156, 63, 150);
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px inset rgb(212, 141, 208);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    -ms-transition: 0.15s;
+    -o-transition: 0.15s;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    color: #255784;
+    background: #f32180;
+    box-shadow: 0 0 10px #f32180, 0 0 40px #f32180, 0 0 80px #f32180;
+}
+
+.ok,
+.no {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card1,
+.card2 {
+    background-color: #052849e0;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: -100%;
+    /* top: calc(50% - 200px); */
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 3px dashed black;
+}
+
+.ok img,
+.no img {
+    width: 65%;
+
+}
+
+#hcard {
+    margin: 15px 0 15px 0;
+}
+
+.ok button,
+.no button:hover {
+    cursor: pointer;
+    color: #255784;
+    background: #f32180;
+    box-shadow: 0 0 10px #f32180, 0 0 40px #f32180, 0 0 80px #f32180;
+}
+
+.shakecomputer {
+    animation: shakecomp 0.8s linear;
+}
+
+.shakeplayer {
+    animation: shakeuser 0.8s linear;
+}
+
+
+@keyframes shakecomp {
+    0% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes shakeuser {
+    0% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
